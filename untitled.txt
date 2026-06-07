@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin-top:10px;
+}
+
+nav{
+    background:#023e8a;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:10px;
+    color:#0077b6;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:2px solid black;
+}
+
+th{
+    background:yellow;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+ul, ol{
+    padding-left:25px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#0077b6;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#023e8a;
+}
+
+.gender{
+    margin:10px 0;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:28px;
+    }
+
+    table{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <h3>Shivam Yadav</h3>
+    <h6>Class 12th Student</h6>
+    <img src="https://picsum.photos/120" alt="Profile">
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#blog">Blog</a>
+</nav>
+
+<div class="container">
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! My name is Shivam Yadav.
+        I am learning HTML in Class 12th.
+        I like Web Designing, Programming and Technology.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <table>
+        <tr>
+            <th>Class</th>
+            <th>School</th>
+            <th>Percentage</th>
+        </tr>
+
+        <tr>
+            <td>10th</td>
+            <td>St. Lukes</td>
+            <td>90%</td>
+        </tr>
+
+        <tr>
+            <td>11th</td>
+            <td>Vidya Vardhi</td>
+            <td>63%</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>Cricket</li>
+        <li>Cooking</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <ol>
+        <li>Centrifugal Blower</li>
+        <li>Dust Collectors</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Audio</h2>
+    <audio controls src=""></audio>
+</section>
+
+<section>
+    <h2>Video</h2>
+    <video controls width="100%" src=""></video>
+</section>
+
+<section>
+    <h2>Contact Me</h2>
+
+    <form>
+
+        <label>Name</label>
+        <input type="text" placeholder="Your Name">
+
+        <label>Email</label>
+        <input type="email" placeholder="xyz@gmail.com">
+
+        <label>Phone Number</label>
+        <input type="number" placeholder="0000000000">
+
+        <div class="gender">
+            Gender:
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <label>City</label>
+        <select>
+            <option>Nallasopara</option>
+            <option>Vasai</option>
+            <option>Virar</option>
+            <option>CSMT</option>
+            <option>Naigaon</option>
+        </select>
+
+        <label>Address</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</section>
+
+</div>
+
+</body>
+</html>
